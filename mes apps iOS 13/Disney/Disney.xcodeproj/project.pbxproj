@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC174E372490D81A001BA2B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC174E362490D81A001BA2B8 /* AppDelegate.swift */; };
+		EC174E392490D81A001BA2B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC174E382490D81A001BA2B8 /* SceneDelegate.swift */; };
+		EC174E3B2490D81A001BA2B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC174E3A2490D81A001BA2B8 /* ViewController.swift */; };
+		EC174E3E2490D81B001BA2B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC174E3C2490D81B001BA2B8 /* Main.storyboard */; };
+		EC174E402490D81D001BA2B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC174E3F2490D81D001BA2B8 /* Assets.xcassets */; };
+		EC174E432490D81D001BA2B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC174E412490D81D001BA2B8 /* LaunchScreen.storyboard */; };
+		EC7284842497703F007F9418 /* waltograph42.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC7284832497703F007F9418 /* waltograph42.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC174E332490D81A001BA2B8 /* Disney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Disney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC174E362490D81A001BA2B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC174E382490D81A001BA2B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC174E3A2490D81A001BA2B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC174E3D2490D81B001BA2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC174E3F2490D81D001BA2B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC174E422490D81D001BA2B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC174E442490D81D001BA2B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7284832497703F007F9418 /* waltograph42.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = waltograph42.ttf; path = "../../../../Downloads/assets disney/waltograph42.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC174E302490D81A001BA2B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC174E2A2490D81A001BA2B8 = {
+			isa = PBXGroup;
+			children = (
+				EC174E352490D81A001BA2B8 /* Disney */,
+				EC174E342490D81A001BA2B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC174E342490D81A001BA2B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC174E332490D81A001BA2B8 /* Disney.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC174E352490D81A001BA2B8 /* Disney */ = {
+			isa = PBXGroup;
+			children = (
+				EC7284832497703F007F9418 /* waltograph42.ttf */,
+				EC174E362490D81A001BA2B8 /* AppDelegate.swift */,
+				EC174E382490D81A001BA2B8 /* SceneDelegate.swift */,
+				EC174E3A2490D81A001BA2B8 /* ViewController.swift */,
+				EC174E3C2490D81B001BA2B8 /* Main.storyboard */,
+				EC174E3F2490D81D001BA2B8 /* Assets.xcassets */,
+				EC174E412490D81D001BA2B8 /* LaunchScreen.storyboard */,
+				EC174E442490D81D001BA2B8 /* Info.plist */,
+			);
+			path = Disney;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC174E322490D81A001BA2B8 /* Disney */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC174E472490D81D001BA2B8 /* Build configuration list for PBXNativeTarget "Disney" */;
+			buildPhases = (
+				EC174E2F2490D81A001BA2B8 /* Sources */,
+				EC174E302490D81A001BA2B8 /* Frameworks */,
+				EC174E312490D81A001BA2B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Disney;
+			productName = Disney;
+			productReference = EC174E332490D81A001BA2B8 /* Disney.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC174E2B2490D81A001BA2B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Benoît Bouton";
+				TargetAttributes = {
+					EC174E322490D81A001BA2B8 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = EC174E2E2490D81A001BA2B8 /* Build configuration list for PBXProject "Disney" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC174E2A2490D81A001BA2B8;
+			productRefGroup = EC174E342490D81A001BA2B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC174E322490D81A001BA2B8 /* Disney */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC174E312490D81A001BA2B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC174E432490D81D001BA2B8 /* LaunchScreen.storyboard in Resources */,
+				EC174E402490D81D001BA2B8 /* Assets.xcassets in Resources */,
+				EC174E3E2490D81B001BA2B8 /* Main.storyboard in Resources */,
+				EC7284842497703F007F9418 /* waltograph42.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC174E2F2490D81A001BA2B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC174E3B2490D81A001BA2B8 /* ViewController.swift in Sources */,
+				EC174E372490D81A001BA2B8 /* AppDelegate.swift in Sources */,
+				EC174E392490D81A001BA2B8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC174E3C2490D81B001BA2B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC174E3D2490D81B001BA2B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC174E412490D81D001BA2B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC174E422490D81D001BA2B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC174E452490D81D001BA2B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC174E462490D81D001BA2B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC174E482490D81D001BA2B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ33H36HS9;
+				INFOPLIST_FILE = Disney/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codabee.Disney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC174E492490D81D001BA2B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WZ33H36HS9;
+				INFOPLIST_FILE = Disney/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codabee.Disney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC174E2E2490D81A001BA2B8 /* Build configuration list for PBXProject "Disney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC174E452490D81D001BA2B8 /* Debug */,
+				EC174E462490D81D001BA2B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC174E472490D81D001BA2B8 /* Build configuration list for PBXNativeTarget "Disney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC174E482490D81D001BA2B8 /* Debug */,
+				EC174E492490D81D001BA2B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC174E2B2490D81A001BA2B8 /* Project object */;
+}

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Les_interactifs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yiO-hc-Yty">
+                                <rect key="frame" x="20" y="10" width="335" height="537.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez votre nom" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="WGb-Fc-f6a">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vc7-Nz-6g4">
+                                        <rect key="frame" x="0.0" y="44" width="335" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Z9-H8-58b">
+                                                <rect key="frame" x="0.0" y="0.0" width="286" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LZh-gk-2Rc">
+                                                <rect key="frame" x="286" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="thumbTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hCC-aP-xWH"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5Y-k5-JQw">
+                                        <rect key="frame" x="0.0" y="85" width="335" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snu-Gs-C1G">
+                                                <rect key="frame" x="0.0" y="0.0" width="241" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" stepValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ofr-9A-gWk">
+                                                <rect key="frame" x="241" y="0.0" width="94" height="32"/>
+                                                <connections>
+                                                    <action selector="stepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="DPT-yq-JM0"/>
+                                                </connections>
+                                            </stepper>
+                                        </subviews>
+                                    </stackView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Oh-MG-HCK">
+                                        <rect key="frame" x="0.0" y="127" width="335" height="32"/>
+                                        <segments>
+                                            <segment title="" image="house.fill" catalog="system"/>
+                                            <segment title="" image="paperplane.fill" catalog="system"/>
+                                            <segment title="" image="cart.fill" catalog="system"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentedChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="r8J-Vr-nEs"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hs-yM-AIt">
+                                        <rect key="frame" x="0.0" y="168" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="V5s-wf-NYM">
+                                        <rect key="frame" x="0.0" y="198.5" width="335" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fC4-3e-NaB">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="max" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAe-Df-7Q9">
+                                                <rect key="frame" x="167.5" y="0.0" width="167.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="100" minimumValueImage="circle.righthalf.fill" catalog="system" maximumValueImage="circle.lefthalf.fill" translatesAutoresizingMaskIntoConstraints="NO" id="1le-HB-Rbf">
+                                        <rect key="frame" x="-2" y="229" width="339" height="31"/>
+                                        <connections>
+                                            <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Jk9-Vs-pCc"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVm-5t-dy8">
+                                        <rect key="frame" x="0.0" y="269" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2cg-c9-6oP">
+                                        <rect key="frame" x="0.0" y="299.5" width="335" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="6Jb-99-woz"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ckq-Qf-fAp">
+                                        <rect key="frame" x="0.0" y="409.5" width="335" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="3k2-es-7Ml"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="38d-yq-78d"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yiO-hc-Yty" secondAttribute="trailing" constant="20" id="4MG-PB-kYk"/>
+                            <constraint firstItem="yiO-hc-Yty" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d5d-n9-22E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yiO-hc-Yty" secondAttribute="bottom" id="wLa-Ec-UID"/>
+                            <constraint firstItem="yiO-hc-Yty" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="zOE-gA-m0T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="ckq-Qf-fAp" id="T6R-4c-P8x"/>
+                        <outlet property="maxLbl" destination="CAe-Df-7Q9" id="Gjz-Ac-dar"/>
+                        <outlet property="minLbl" destination="fC4-3e-NaB" id="eza-tD-FaO"/>
+                        <outlet property="mySwitch" destination="LZh-gk-2Rc" id="J3n-Cd-xBh"/>
+                        <outlet property="pickerV" destination="2cg-c9-6oP" id="kaf-SE-WVp"/>
+                        <outlet property="segmented" destination="5Oh-MG-HCK" id="fPm-pi-w45"/>
+                        <outlet property="segmentedLbl" destination="9hs-yM-AIt" id="tq8-w9-vZt"/>
+                        <outlet property="slider" destination="1le-HB-Rbf" id="Ueh-TP-D05"/>
+                        <outlet property="sliderLbl" destination="QVm-5t-dy8" id="eW0-4c-fAV"/>
+                        <outlet property="stepper" destination="Ofr-9A-gWk" id="4Or-3Y-GYs"/>
+                        <outlet property="stepperLbl" destination="Snu-Gs-C1G" id="Iip-Wj-xaM"/>
+                        <outlet property="switchLBl" destination="2Z9-H8-58b" id="pqw-8R-HIT"/>
+                        <outlet property="textField" destination="WGb-Fc-f6a" id="Rl1-Cs-O6C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="circle.lefthalf.fill" catalog="system" width="128" height="121"/>
+        <image name="circle.righthalf.fill" catalog="system" width="128" height="121"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Appareil_Photo_avec_aggrandissement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fU8-z8-1ep">
+                                <rect key="frame" x="20" y="74" width="374" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c9I-nI-LpB" customClass="MyImage" customModule="Appareil_Photo_avec_aggrandissement" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="25" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="aiF-vU-HGY"/>
+                                            <constraint firstAttribute="width" constant="150" id="axv-eR-kKJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="qfq-7y-3uN">
+                                        <rect key="frame" x="166" y="25" width="208" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnk-TW-bgR">
+                                                <rect key="frame" x="0.0" y="0.0" width="208" height="48"/>
+                                                <state key="normal" image="camera"/>
+                                                <connections>
+                                                    <action selector="takeAPic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CXc-lv-YmW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOq-gD-HhE">
+                                                <rect key="frame" x="0.0" y="102" width="208" height="48"/>
+                                                <state key="normal" image="gallery"/>
+                                                <connections>
+                                                    <action selector="takeAPic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZpS-C4-uzU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3xh-K1-t0n"/>
+                                    <constraint firstAttribute="bottom" secondItem="qfq-7y-3uN" secondAttribute="bottom" constant="25" id="89I-cy-HA6"/>
+                                    <constraint firstItem="c9I-nI-LpB" firstAttribute="centerY" secondItem="fU8-z8-1ep" secondAttribute="centerY" id="8uu-5n-6rr"/>
+                                    <constraint firstItem="qfq-7y-3uN" firstAttribute="leading" secondItem="c9I-nI-LpB" secondAttribute="trailing" constant="8" id="Hzu-R9-V5c"/>
+                                    <constraint firstItem="c9I-nI-LpB" firstAttribute="leading" secondItem="fU8-z8-1ep" secondAttribute="leading" constant="8" id="LP3-kn-6lI"/>
+                                    <constraint firstAttribute="trailing" secondItem="qfq-7y-3uN" secondAttribute="trailing" id="b75-8V-sc4"/>
+                                    <constraint firstItem="qfq-7y-3uN" firstAttribute="top" secondItem="fU8-z8-1ep" secondAttribute="top" constant="25" id="iy6-ti-U6R"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fU8-z8-1ep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R00-Yi-Fer"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fU8-z8-1ep" secondAttribute="trailing" constant="20" id="VFD-JI-yBe"/>
+                            <constraint firstItem="fU8-z8-1ep" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="q7U-zX-RXI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="holderView" destination="fU8-z8-1ep" id="JMv-N3-vaI"/>
+                        <outlet property="pictureIV" destination="c9I-nI-LpB" id="bDM-FZ-HOP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" width="48" height="48"/>
+        <image name="gallery" width="48" height="48"/>
+    </resources>
+</document>

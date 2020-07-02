@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2Z9-H8-58b"; */
+"2Z9-H8-58b.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9hs-yM-AIt"; */
+"9hs-yM-AIt.text" = "Label";
+
+/* Class = "UILabel"; text = "max"; ObjectID = "CAe-Df-7Q9"; */
+"CAe-Df-7Q9.text" = "max";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QVm-5t-dy8"; */
+"QVm-5t-dy8.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Snu-Gs-C1G"; */
+"Snu-Gs-C1G.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Entrez votre nom"; ObjectID = "WGb-Fc-f6a"; */
+"WGb-Fc-f6a.placeholder" = "Entrez votre nom";
+
+/* Class = "UILabel"; text = "min"; ObjectID = "fC4-3e-NaB"; */
+"fC4-3e-NaB.text" = "min";

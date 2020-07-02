@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cameraPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="12b-Qe-ng5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEI-8F-Cio">
+                                <rect key="frame" x="157.5" y="587" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="71g-fv-03V"/>
+                                    <constraint firstAttribute="height" constant="60" id="ZdG-Ma-FZ0"/>
+                                </constraints>
+                                <state key="normal" image="camera"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yis-tR-tdq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uj-ed-T83">
+                                <rect key="frame" x="20" y="612" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="U0x-FW-kF1"/>
+                                    <constraint firstAttribute="height" constant="45" id="wBp-hC-k67"/>
+                                </constraints>
+                                <state key="normal" image="gallery"/>
+                                <connections>
+                                    <action selector="libraryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Rx-bC-Opw"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9hz-RQ-E49">
+                                <rect key="frame" x="306" y="626" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="u0v-MS-LRF"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNK-wV-DQI">
+                                <rect key="frame" x="313" y="595" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pNK-wV-DQI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NEI-8F-Cio" secondAttribute="trailing" constant="8" symbolic="YES" id="0f4-MK-XYx"/>
+                            <constraint firstItem="NEI-8F-Cio" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8hu-2Z-YI6"/>
+                            <constraint firstItem="12b-Qe-ng5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="C5N-dd-vST"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6uj-ed-T83" secondAttribute="bottom" constant="10" id="LMf-Z8-aH8"/>
+                            <constraint firstItem="12b-Qe-ng5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nuk-k9-TpN"/>
+                            <constraint firstItem="9hz-RQ-E49" firstAttribute="top" secondItem="pNK-wV-DQI" secondAttribute="bottom" constant="10" id="Rdz-ci-se7"/>
+                            <constraint firstItem="6uj-ed-T83" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gcF-Kl-qck"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9hz-RQ-E49" secondAttribute="trailing" constant="20" id="lt8-Cw-rZ3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9hz-RQ-E49" secondAttribute="bottom" constant="10" id="mV4-bd-Cms"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pNK-wV-DQI" secondAttribute="trailing" constant="20" id="mX3-4e-ROP"/>
+                            <constraint firstAttribute="bottom" secondItem="12b-Qe-ng5" secondAttribute="bottom" id="nIh-My-loG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NEI-8F-Cio" secondAttribute="bottom" constant="20" id="ogO-j5-ttE"/>
+                            <constraint firstItem="12b-Qe-ng5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tsz-jf-TDk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageHolder" destination="12b-Qe-ng5" id="wLz-OF-SDV"/>
+                        <outlet property="mySwitch" destination="9hz-RQ-E49" id="1vA-Yl-BWE"/>
+                        <outlet property="switchLabel" destination="pNK-wV-DQI" id="wrO-Aa-cje"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" width="490" height="490"/>
+        <image name="gallery" width="48" height="48"/>
+    </resources>
+</document>

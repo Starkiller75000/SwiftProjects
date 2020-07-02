@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="waltograph42.ttf">
+            <string>Waltograph</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Disney" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-g2-1eJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quel personnage de Disney êtes-vous?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ2-gr-ee9">
+                                <rect key="frame" x="10" y="10" width="355" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="eSq-V3-jL3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Waltograph" family="Waltograph" pointSize="35"/>
+                                <color key="textColor" red="0.89764219519999999" green="0.45726251600000001" blue="0.83532607560000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YsH-s6-CaR">
+                                <rect key="frame" x="10" y="95" width="355" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="b4n-KX-M1c"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gyk-s1-Ks8">
+                                <rect key="frame" x="10" y="405" width="355" height="252"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vous êtes un:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="sj1-Sj-QDw">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Thp-xD-6AL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Waltograph" family="Waltograph" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nDO-V7-LfE">
+                                        <rect key="frame" x="0.0" y="30" width="355" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9p-eO-TPi">
+                                                <rect key="frame" x="0.0" y="0.0" width="105" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="iVg-L3-fnq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Waltograph" family="Waltograph" pointSize="20"/>
+                                                <state key="normal" title="Homme">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="genderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2HC-6d-9jK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpQ-CK-MOD">
+                                                <rect key="frame" x="125" y="0.0" width="105" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="39p-ml-nWT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Waltograph" family="Waltograph" pointSize="20"/>
+                                                <state key="normal" title="Femme">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="genderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ooF-UF-Otl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmb-H3-Pps">
+                                                <rect key="frame" x="250" y="0.0" width="105" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="eBP-ba-gDa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Waltograph" family="Waltograph" pointSize="20"/>
+                                                <state key="normal" title="Animal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="genderPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsu-dR-zIH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vous vivez dans:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="v7J-7Z-ZWx">
+                                        <rect key="frame" x="0.0" y="80" width="355" height="41"/>
+                                        <fontDescription key="fontDescription" name="Waltograph" family="Waltograph" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gbA-CV-ZS7">
+                                        <rect key="frame" x="0.0" y="131" width="355" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76x-QQ-ETZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="105" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Waltograph" family="Waltograph" pointSize="20"/>
+                                                <state key="normal" title="Nature">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="placePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="atR-0P-XSd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fi-jp-gxa">
+                                                <rect key="frame" x="125" y="0.0" width="105" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Waltograph" family="Waltograph" pointSize="20"/>
+                                                <state key="normal" title="Chateau">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="placePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bvn-27-Wvq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iw2-PG-xoO">
+                                                <rect key="frame" x="250" y="0.0" width="105" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Waltograph" family="Waltograph" pointSize="20"/>
+                                                <state key="normal" title="Ville">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="placePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ggJ-DS-keq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hta-Eb-7zP">
+                                        <rect key="frame" x="0.0" y="181" width="355" height="71"/>
+                                        <fontDescription key="fontDescription" name="Waltograph" family="Waltograph" pointSize="30"/>
+                                        <state key="normal" title="C'est parti !">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h9M-xm-VdA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU5-Eh-KQk">
+                                <rect key="frame" x="10" y="355" width="355" height="40"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Zuu-jh-iAw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Waltograph" family="Waltograph" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZZ2-gr-ee9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="0vs-du-OSO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dfy-g2-1eJ" secondAttribute="trailing" id="45N-br-i5Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dU5-Eh-KQk" secondAttribute="trailing" constant="10" id="4Mn-4u-uCv"/>
+                            <constraint firstItem="ZZ2-gr-ee9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="C9l-gP-jJe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gyk-s1-Ks8" secondAttribute="trailing" constant="10" id="Nao-1M-pEO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YsH-s6-CaR" secondAttribute="trailing" constant="10" id="POh-7P-Vff"/>
+                            <constraint firstItem="dU5-Eh-KQk" firstAttribute="top" secondItem="YsH-s6-CaR" secondAttribute="bottom" constant="10" id="QrX-1f-WYg"/>
+                            <constraint firstItem="dfy-g2-1eJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Sfb-sL-KAa"/>
+                            <constraint firstItem="YsH-s6-CaR" firstAttribute="top" secondItem="ZZ2-gr-ee9" secondAttribute="bottom" constant="10" id="U0S-cI-U5c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dfy-g2-1eJ" secondAttribute="bottom" id="VYh-iv-79T"/>
+                            <constraint firstItem="dU5-Eh-KQk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Vzi-nU-gZO"/>
+                            <constraint firstItem="gyk-s1-Ks8" firstAttribute="top" secondItem="dU5-Eh-KQk" secondAttribute="bottom" constant="10" id="X7K-tn-DZ3"/>
+                            <constraint firstItem="gyk-s1-Ks8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="YmL-OA-aXZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gyk-s1-Ks8" secondAttribute="bottom" constant="10" id="eQH-Xq-z6Z"/>
+                            <constraint firstItem="YsH-s6-CaR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="mnB-SD-3u1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZZ2-gr-ee9" secondAttribute="trailing" constant="10" id="sxw-8n-hAe"/>
+                            <constraint firstItem="dfy-g2-1eJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uNE-2G-ADM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="YsH-s6-CaR" id="Af4-EX-2JA"/>
+                        <outlet property="resultLabel" destination="dU5-Eh-KQk" id="3vY-A1-ZH9"/>
+                        <outlet property="titleLabel" destination="ZZ2-gr-ee9" id="rnN-X9-wG5"/>
+                        <outletCollection property="genderButtons" destination="d9p-eO-TPi" collectionClass="NSMutableArray" id="7Q0-84-rOE"/>
+                        <outletCollection property="genderButtons" destination="EpQ-CK-MOD" collectionClass="NSMutableArray" id="9LZ-M6-rHn"/>
+                        <outletCollection property="genderButtons" destination="hmb-H3-Pps" collectionClass="NSMutableArray" id="oo8-ze-y4k"/>
+                        <outletCollection property="placeButtons" destination="76x-QQ-ETZ" collectionClass="NSMutableArray" id="cZb-rY-caS"/>
+                        <outletCollection property="placeButtons" destination="5fi-jp-gxa" collectionClass="NSMutableArray" id="zPq-aU-COH"/>
+                        <outletCollection property="placeButtons" destination="iw2-PG-xoO" collectionClass="NSMutableArray" id="hoI-3J-6I2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58.399999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="1080" height="1920"/>
+    </resources>
+</document>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quel_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quel Swift êtes-vous" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="IHi-cs-l1B">
+                                <rect key="frame" x="10" y="10" width="355" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="qav-93-2XS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appuyez sur un bouton" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3W-29-GSE">
+                                <rect key="frame" x="10" y="92" width="355" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="OHr-yb-fJv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image (0)" translatesAutoresizingMaskIntoConstraints="NO" id="2IL-hR-EFn">
+                                <rect key="frame" x="10" y="177" width="355" height="349"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="clg-9x-vLx">
+                                <rect key="frame" x="10" y="536" width="355" height="115"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="102" translatesAutoresizingMaskIntoConstraints="NO" id="4pA-dP-dua">
+                                        <rect key="frame" x="0.5" y="0.0" width="354" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWi-ax-IFG">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="4BS-rc-yD1"/>
+                                                    <constraint firstAttribute="height" constant="50" id="LF4-Oj-b9s"/>
+                                                </constraints>
+                                                <state key="normal" image="Jelly (1)"/>
+                                                <connections>
+                                                    <action selector="onButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tS1-ud-ONT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIU-PV-JK1">
+                                                <rect key="frame" x="152" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="igJ-hH-qXl"/>
+                                                    <constraint firstAttribute="width" constant="50" id="sPx-Ea-I6U"/>
+                                                </constraints>
+                                                <state key="normal" title="Reset">
+                                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cRQ-HZ-INx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd9-2n-v23">
+                                                <rect key="frame" x="304" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="U4S-z6-StC"/>
+                                                    <constraint firstAttribute="height" constant="50" id="ptN-Nn-gul"/>
+                                                </constraints>
+                                                <state key="normal" image="Jelly (2)"/>
+                                                <connections>
+                                                    <action selector="onButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zef-NT-doX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="148" translatesAutoresizingMaskIntoConstraints="NO" id="V8N-VF-HXE">
+                                        <rect key="frame" x="53.5" y="65" width="248" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="487-Q1-lAD">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="As5-lP-GdD"/>
+                                                    <constraint firstAttribute="height" constant="50" id="ug7-wm-GrR"/>
+                                                </constraints>
+                                                <state key="normal" image="Jelly (3)"/>
+                                                <connections>
+                                                    <action selector="onButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zi4-PF-2HY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTe-Ja-ohI">
+                                                <rect key="frame" x="198" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="6Lu-fr-jcK"/>
+                                                    <constraint firstAttribute="height" constant="50" id="ywT-nX-UYb"/>
+                                                </constraints>
+                                                <state key="normal" image="Jelly (4)"/>
+                                                <connections>
+                                                    <action selector="onButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BGp-gb-dll"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="clg-9x-vLx" secondAttribute="trailing" constant="10" id="EJi-M3-GVS"/>
+                            <constraint firstItem="g3W-29-GSE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Fhy-bC-AVb"/>
+                            <constraint firstItem="clg-9x-vLx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="SZR-iX-Hw9"/>
+                            <constraint firstItem="IHi-cs-l1B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="WSi-R9-nvd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g3W-29-GSE" secondAttribute="trailing" constant="10" id="XEe-CY-Dr6"/>
+                            <constraint firstItem="IHi-cs-l1B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Yfy-Km-ynM"/>
+                            <constraint firstItem="g3W-29-GSE" firstAttribute="top" secondItem="IHi-cs-l1B" secondAttribute="bottom" constant="10" id="glO-Yp-1hX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2IL-hR-EFn" secondAttribute="trailing" constant="10" id="qZJ-3K-4xa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="clg-9x-vLx" secondAttribute="bottom" constant="16" id="rgX-Wl-AVC"/>
+                            <constraint firstItem="2IL-hR-EFn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="sZn-A8-I9u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IHi-cs-l1B" secondAttribute="trailing" constant="10" id="woF-HL-Qjx"/>
+                            <constraint firstItem="clg-9x-vLx" firstAttribute="top" secondItem="2IL-hR-EFn" secondAttribute="bottom" constant="10" id="xLZ-uy-z5c"/>
+                            <constraint firstItem="2IL-hR-EFn" firstAttribute="top" secondItem="g3W-29-GSE" secondAttribute="bottom" constant="10" id="zo9-3B-CmH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="appTitle" destination="g3W-29-GSE" id="sEC-uF-QZO"/>
+                        <outlet property="image" destination="2IL-hR-EFn" id="wPV-sB-SIC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Jelly (1)" width="50" height="45"/>
+        <image name="Jelly (2)" width="50" height="49"/>
+        <image name="Jelly (3)" width="50" height="42"/>
+        <image name="Jelly (4)" width="50" height="46"/>
+        <image name="image (0)" width="1280" height="704"/>
+    </resources>
+</document>
